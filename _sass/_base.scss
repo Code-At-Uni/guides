@@ -1,0 +1,171 @@
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+  color: rgba(0,0,0,.8);
+  @include media-query($on-palm) {
+    font-size: 1em;
+  }
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-top: $spacing-unit ;
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1{
+    font-size: 2.5em;
+    @include media-query($on-laptop) {
+        font-size: 2em;
+    }
+}
+h2{
+    font-size: 1.6em;
+    @include media-query($on-laptop) {
+        font-size: 1.2em;
+    }
+}
+
+h3{
+    font-size: 1.2em;
+    @include media-query($on-laptop) {
+        font-size: 0.9em;
+    }
+}
+
+h4 {
+        font-size: 1em;
+    @include media-query($on-laptop) {
+        font-size: 0.8em;
+    }
+}
+
+h5{
+        font-size: 0.9em;
+    @include media-query($on-laptop) {
+        font-size: 0.7em;
+    }
+    
+}
+
+a {
+    color: $brand-color;
+    text-decoration: none;
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    font-family: serif;
+    color: $grey-color;
+    border: 1px solid $grey-color-light;
+    border-left: 4px solid $brand-color;
+    padding-left: $spacing-unit / 2;
+    font-style: italic;
+    padding-bottom: 10px;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+.wrapper {
+    
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+

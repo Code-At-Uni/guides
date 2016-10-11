@@ -1,0 +1,15 @@
+safe: true
+lsi: false
+highlighter: rouge
+future: true
+markdown: kramdown
+encoding: utf-8
+kramdown:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+exclude: [
+  "javascripts-dev",
+  "node_modules"
+]
+#CSS
+sass:
+  style: compressed
