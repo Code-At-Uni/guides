@@ -38,16 +38,16 @@ HTML elements are made up of an opening tag, followed by content then the closin
 <tagname>some content</tagname>
 ```
 
-Example of a paragraph would be:
+Example of a paragraph:
 
 ```html
 <p>this is a small paragraph</p>
 ```
 
-A heading:
+Example of a heading:
 
 ```html
-<h1>This is a big paragraph</h1>
+<h1>This is a big heading</h1>
 ```
 
 Some HTML elements do not need a closing tag as they are used to place standalone elements on the webpage. For example:
@@ -57,7 +57,7 @@ Some HTML elements do not need a closing tag as they are used to place standalon
 <hr>  <!-- Horizontal ruler -->
 <img> <!-- Image -->
 
-<!-- Extra Tip: The elements inside these type of brackets 
+<!-- Extra Tip: The elements inside these type of brackets
 are comments, and will not appear visible -->
 
 ```
@@ -71,25 +71,25 @@ It's not design at all, it is not the color, but just the content, your content 
 Lets put some content on our blank page and see how it will make our landing page development a breeze.
 Lets give it a title as an <h1>, and write a paragraph as a <p>, or copy paste some text that will be the foundation of your first web page.
 
-Let's also add a link to another web-page, since internet is always about connecting you to the next computer on the network.
+Let's also add a link to another web-page, since the internet is fundamentally about connecting you to the next computer on the network.
 
 ```html
 
 <h1>My First Step into Web</h1>
-<p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; ser experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all.</p>
+<p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all.</p>
 <p>The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.</p>
 <a href="http://en.wikipedia.org/wiki/Web_Design">More information about Web-Design...</a>
 ```
 
-Here is an example if you feel lazy, notice how the tags open and close, and also how the heading needs to be closed before opening a paragraph tag. 
+Here is an example if you feel lazy, notice how the tags open and close, and also how the heading needs to be closed before opening a paragraph tag.
 What would happen if we didn't close the heading tag? Try it out...
 
 Almost 90% of every web page is text, and if you can see it being displayed you are already 90% done,
-but it doenst look pretty at all.
+but it doesn't look pretty at all.
 
 -----
 
-If you don't understand some of the elements here is a brief run-down.
+If you don't understand some of the elements, here is a brief run-down.
 
 ### Element: Headings
 
@@ -102,7 +102,7 @@ Headings come in 6 sizes
 ##### `<h5>Heading</h5>`
 ###### `<h6>Heading</h6>`
 
-A `h1` defines the most important heading whereas a `h6` defines the least important.
+A `h1` defines the largest heading whereas a `h6` defines the smallest.
 
 ### Element: Paragraph `<p>`
 
@@ -126,11 +126,11 @@ A link lets the user click through to another webpage. We use the attribute `hre
 
 ## Diving into Cascading Style Sheets
 
-Altough we said we are 90% done, it does not look pretty all, let's get more introduced into CSS.
+Altough we said we are 90% done, it does not look pretty all, let's get more introduced to CSS.
 
 ### Why CSS, and not just HTML?
 
-During the early stages of HTML, quite a lot of extra markup was required to change colors, text-positioning and stylistic representation of elements, which made any page almost impossible to understand clearly in a mess of content, style and rules which were very specific to each element.
+During the early stages of HTML, quite a lot of extra markup was required to change colors, text-positioning and style of elements, which made any page almost impossible to understand clearly in a mess of content, style and rules which were very specific to each element.
 This was not efficient to mantain, as people wanted to separate form and structure from style and appearence.
 A proposal was made for externalizing the style into a separate document now simply called CSS to ease up the content writing and it's style formatting
 
@@ -138,13 +138,13 @@ Nowadays, we can bring a piece of text to life with colors, fonts and positionin
 
 ### How CSS Rules Work
 
-In your CSS window, you can try typing 
+In your CSS window, you can try typing
 
 ```css
 p{ color: blue;}
 ```
 
-You will see almost instantly, text changing from it's black default color to blue. But not the heading or the link, just the paragraph text.
+You will see almost instantly, text changing from its black default color to blue. But not the heading or the link, just the paragraph text.
 
 You can read this as:
 ```css
@@ -153,17 +153,17 @@ who{ what: how;}
 
 And sometimes you might get the rules confused for trying to change the background color vs the text-color, and plenty of others.
 ```css
-p{ 
+p{
 color: blue;
 background-color: red;
 }
 ```
 
-You may delete this after you happy playing around with colors.
+You may delete this after you have played around with the colours.
 
-And since our text still needs a lot of rules to be defined, we are going to start from it's main base, to the finer details, lets start by giving it some readability.
+And since our text still needs a lot of rules to be defined, we are going to start from it's main base before going into the finer details. Lets start by giving it some readability.
 
-Positioning is the difference between something readable, and pure information overload.
+Positioning is the difference between making something look readable, and pure information overload.
 
 > The `//` are comments, try writing the rules one by one until you are happy with how the text is positioned.
 
@@ -179,11 +179,16 @@ body{
 }
 ```
 
-If you are in CodePen, you dont see body tag anywhere, but it's essentially all around the code you wrote, there is also some invisible parts like <head> which will define title and other attributes of your HTML document, but lets discuss them at a later time.
+If you are in CodePen, you won't see the body tag anywhere, but it's essentially all around the code you wrote, there are also some invisible parts like <head> which will define title and other attributes of your HTML document, but we'll discuss these at a later time.
 
-As you see width, gives our webpage its horizontal space.
-Playing with margins will allow it to not to start from the first pixel on the left, being margin: 0 auto a rule to center it no matter the situation.
-Line-height allows us to define how much height we want for every paragraph to have, so the text can breathe from top and bottom.
+As you can see, width gives our webpage its horizontal space.
+
+Playing with margins will allow you to generate spaces around elements.
+
+Margin: 0 auto is a rule to center it no matter the situation.
+
+
+Line-height allows us to define how much height we want every paragraph to have, so the text can breathe from top and bottom.
 
 -----
 
@@ -207,21 +212,21 @@ h1 {
 }
 ```
 
-> `em` are the same pixel value of your current font-size, if we still did not set it, it defaults to 16px.
+> `em` are the same pixel value of your current font-size, if you haven't set it, it defaults to 16px.
 
-If you have those fonts you will see that it will nicely change the font of all our text and make it so much better.
+If you have those fonts you will see that it will nicely change the font of all our text and make it look much nicer.
 
-This CSS rules has much more than just one parameter how we are used to before, in this specific case, for people who don't have Helvetica font, will see Arial, if not Arial a default sans-serif font will be applied which even exists in low level systems.
+This CSS rules have much more than just one parameter how we are used to before, in this specific case, for people who don't have Helvetica font, will see Arial, if not Arial a default sans-serif font will be applied which even exists in low level systems.
 
-> If you want to experiment with different font's, and serifed fonts try adding Georgia on top of that list of fonts.
+> If you want to experiment with different fonts, and serifed fonts try adding Georgia on top of that list of fonts.
 
-It feels like the layout of this page is already quiete readable and fully positioned around its content, but we could add some subtle changes to improve even more its readability
+It feels like the layout of this page is already quite readable and fully positioned around its content, but we could add some subtle changes to further improve its readability
 
 -----
 
 ### Finding balance in color and contrast
 
-Black text on white background doesn't always cause great impression, and in greater lenghts can be quiete tiring to read over a long period of time.
+Black text on white background doesn't always cause a great impression, and in greater lenghts can be quite tiring to read over a long period of time.
 Usually people try to tone it down by using a shade of grey or other possible faded color to make their text subtle, attractive and less default.
 
 Apply the first commented rule if you want to go to a nicer shade, or the default grey referred as `#555` is usually enough for every eye out there.
@@ -319,7 +324,7 @@ Try to take a moment to appreciate how nice and simple this look, but also how m
 
 So far we've learned about how to add text, headings and links to our page. Now let's add some images!
 If we are doing this on your computer,  we'll need to add the image files we want to use to the project folder. If you are still on CodePen, skip the next line.
-It's very important to keep images in their own folder, so first, create a folder called 'images' inside the same folder as your HTML file.  
+It's very important to keep images in their own folder, so first, create a folder called 'images' inside the same folder as your HTML file.
 Next, download the images you'll need. Do this by right clicking on each of the following links, select 'Save Link As...', and save it to the images folder you just created.
 
 I would usually recommend going for a higher quality image, that you either have taken in the past, or using sources like [Unsplash](https://unsplash.com/).
@@ -457,9 +462,9 @@ Add a share on twitter link along with your other sharing links.
 <a href="http://twitter.com/home?status=I love coding HTML! via @codeatuni">Share your love of coding on twitter</a>
 ```
 -----
-This ends our first lesson, we hope you enjoyed it and learnt something. 
-If you have some spare time how about going back through this tutorial and, by yourself, 
-make some amendments. 
+This ends our first lesson, we hope you enjoyed it and learnt something.
+If you have some spare time how about going back through this tutorial and, by yourself,
+make some amendments.
 
 If there is something you did not understand or want to give us some feedback,
  please [send us an email.](mailto:feedback@codeatuni.io) or come and chat on our slack!
