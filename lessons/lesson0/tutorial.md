@@ -67,11 +67,15 @@ are comments, and will not appear visible -->
 
 ### The most important thing about web design
 
-It's not design at all, it is not the color, but just the content, your content will define all the layout.
-Lets put some content on our blank page and see how it will make our landing page development a breeze.
-Lets give it a title as an <h1>, and write a paragraph as a <p>, or copy paste some text that will be the foundation of your first web page.
+The purpose of design is to present the content. That's it.
+Content is the primary element of a website, it should never be last on your list to add after you web designed it.
+Written content mostly, is 90% of the Web, however the way we style it will teach us all about the design aspects.
 
-Let's also add a link to another web-page, since the internet is fundamentally about connecting you to the next computer on the network.
+Lets put some content on our blank page:
+
+- Lets give it a title as an <h1>
+- Write a paragraph as a <p> (or find some text to be the foundation of your page)
+- Let's also add a link to another web-page (since internet is always about connecting you to the next computer on the network)
 
 ```html
 
@@ -91,36 +95,36 @@ but it doesn't look pretty at all.
 
 If you don't understand some of the elements, here is a brief run-down.
 
-### Element: Headings
+> #### 🔎 Element: Headings
+>
+> Headings come in 6 sizes
+>
+> # `<h1>Heading</h1>`
+> ## `<h2>Heading</h2>`
+> ### `<h3>Heading</h3>`
+> #### `<h4>Heading</h4>`
+> ##### `<h5>Heading</h5>`
+> ###### `<h6>Heading</h6>`
+>
+> A `h1` defines the most important heading whereas a `h6` defines the least important.
 
-Headings come in 6 sizes
+> #### 🔎 Element: Paragraph `<p>`
+>
+> Putting content into a `<p>` tag will break your text up into paragraphs. 
+> This helps make the content of your page easier to read for the user.
+> 
+> ```html
+> <p>
+>   Lorem ipsum is one of those texts you will see very often on people who just started laying out a web-page.
+> </p>
+> ```
 
-# `<h1>Heading</h1>`
-## `<h2>Heading</h2>`
-### `<h3>Heading</h3>`
-#### `<h4>Heading</h4>`
-##### `<h5>Heading</h5>`
-###### `<h6>Heading</h6>`
-
-A `h1` defines the largest heading whereas a `h6` defines the smallest.
-
-### Element: Paragraph `<p>`
-
-Putting content into a `<p>` tag will break your text up into paragraphs. This helps make the content of your page easier to read for the user.
-
-```html
-<p>
-  Lorem ipsum is one of those texts you will see very often on people who just started laying out a web-page.
-</p>
-```
-
-### Element: Link `<a>`
-
-A link lets the user click through to another webpage. We use the attribute `href` to indicate where you want the user to go.
-
-```html
-<a href="http://en.wikipedia.org/wiki/Web_Design">More information about Web-Design...</a>
-```
+> #### 🔎 Element: Link `<a>`
+> A link lets the user click through to another webpage. We use the attribute `href` to indicate where you want the user to go.
+> ```html
+> <a href="http://en.wikipedia.org/wiki/Web_Design">More information about Web-Design...</a>
+> ```
+>>>>>>> refresh content
 
 -----
 
@@ -130,8 +134,12 @@ Altough we said we are 90% done, it does not look pretty all, let's get more int
 
 ### Why CSS, and not just HTML?
 
-During the early stages of HTML, quite a lot of extra markup was required to change colors, text-positioning and style of elements, which made any page almost impossible to understand clearly in a mess of content, style and rules which were very specific to each element.
-This was not efficient to mantain, as people wanted to separate form and structure from style and appearence.
+
+During the early stages of HTML, quite a lot of extra markup was required to change colors, positioning and other style changes.
+It made any page almost impossible to understand.
+Rules existed for some elements and people were always getting errors in their html.
+This wasn't maintainable. People wanted to separate form and structure from style and appearance.
+
 A proposal was made for externalizing the style into a separate document now simply called CSS to ease up the content writing and it's style formatting
 
 Nowadays, we can bring a piece of text to life with colors, fonts and positioning all around for every specific device by writing rules.
@@ -320,14 +328,16 @@ body{
 Try to take a moment to appreciate how nice and simple this look, but also how much code have you already learned to make this.
 
 -----
-### An `<img>` is worth a thousand words
+### An < img > is worth a thousand words
 
-So far we've learned about how to add text, headings and links to our page. Now let's add some images!
-If we are doing this on your computer,  we'll need to add the image files we want to use to the project folder. If you are still on CodePen, skip the next line.
-It's very important to keep images in their own folder, so first, create a folder called 'images' inside the same folder as your HTML file.
-Next, download the images you'll need. Do this by right clicking on each of the following links, select 'Save Link As...', and save it to the images folder you just created.
 
-I would usually recommend going for a higher quality image, that you either have taken in the past, or using sources like [Unsplash](https://unsplash.com/).
+So far we’ve learned about how to add text, headings and links to our page. Now let’s add some images! If we are doing this on your computer, we’ll need to add the image files we want to use to the project folder. If you are still on CodePen, skip the next line. 
+
+It’s good practice to keep images in their own folder, so first, create a folder called ‘images’ inside the same folder as your index.html file. 
+
+Next, download the images you’ll need. Do this by right clicking on the following link, select ‘Save Link As…’, and save it to the images folder you just created.
+
+> We would usually recommend going for a higher quality image, that you either have taken in the past, or using sources like [Unsplash](https://unsplash.com/).
 
 Choose anything that you like, since this is a web design site we will go with [this one.](https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d)
 
@@ -335,13 +345,14 @@ Let's first add it to our HTML, just to see how it looks, and later move it arou
 
 Here is a brief explanation how the element works.
 
-### Element: Image `<img>`
-
-Images are primarily made up of three attributes
-
-* the `<img>` tag
-* the `src` attribute, which lets the page know what image we want to view
-* the `alt` attribute, this provides extra information if the image cannot be seen on the webpage for any reason
+> #### 🔎 Element: Image `<img>`
+>
+> Images are primarily made up of three attributes
+> 
+> * the `<img>` tag
+> * the `src` attribute, which lets the page know what image we want to view
+> * the `alt` attribute, this provides extra information if the image cannot be seen on the webpage for any reason
+>
 
 In order for us to see this image on the webpage we need to link to the image, this involves telling the webpage where it is and what it is called. Before the main heading of the page, add the following
 
@@ -363,10 +374,15 @@ img{
 ### Defining Semantic Sections
 
 Before we proceed we have to get better at naming things.
-Let's call the first section of our heading and image a header, and everything else main section.
 
-Recently in HTML there has been a push for semantics, for robots and humans to understand where does important content usually sit, and what can be discarded as not part of the content.
-Imagine like footers, sidebars and headers are not usually the main reason people go to websites, or when google indexes those, they also try to read the value of the content and not really worry about all the finer details in footers or sidebars.
+Let's call the first section of our heading and image a header, and everything else main section.
+> #### 📘 Extra Notes: ####
+> It has become increasingly important in HTML to make it more readable by not just humans but robots as well; you probably know this as Search Engine Optimisation (or SEO)
+>
+> For instance, footers, sidebars and headers are not usually the main reason people go to websites so when Google's army of web crawler robots index those, they focus on reading the parts you defined as content and ignore the finer details in footers or sidebars.
+>
+> There is a whole industry dedicated to making your website more Google friendly and this is the basis of what they do.
+
 
 Let's wrap up our existing code in two sections, and even add a third one, calling it footer.
 
