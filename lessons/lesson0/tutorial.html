@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- IE 6, 7, 8 and 9 -->
+    <!--[if IE]>
+    <script type="text/javascript" src="http://stuk.github.io/jszip-utils/dist/jszip-utils-ie.js"></script>
+    <![endif]-->
+  </head>
+  <body >
+    <div id="main">
+      <div id="content">
+        <div>
+  <article role="article">
+      
+      <header>
+        <h1 class="entry-title">Landing Page in 90 Minutes</h1>
+      </header>
+      
+    <div class="wrapper">
+      <h2 id="introduction-to-html">Introduction to HTML</h2>
+
+<p>In the first 10 minutes we are going to look at:</p>
+
+<ul>
+  <li>What is HTML?</li>
+  <li>What is CSS?</li>
+  <li>What is an element?</li>
+  <li>How to style an element?</li>
+</ul>
+
+<h3 id="goal">Goal</h3>
+
+<p>By the end of this tutorial you will have built <a href="../../examples/landing_first/index.html" title="Landing Pages Rule">this webpage.</a> You can later apply it to be your portfolio, cv or personal project.</p>
+
+<hr />
+
+<h4 id="what-does-html-stand-for">What does HTML stand for?</h4>
+
+<p><strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</p>
+
+<p><strong>HTML</strong> is the language used to build websites. All text and content that you see on the internet is built using HTML.</p>
+
+<p><strong>CSS</strong> is used with HTML to style the page. We will be learning some of this today but it will also be covered extensively in the next set of tutorials.</p>
+
+<h2 id="html-elements">HTML elements</h2>
+
+<p>An <strong>element</strong> is an HTML building block. There are paragraphs, headings, links, lists, and <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element">many more.</a></p>
+
+<p>HTML elements are made up of an opening tag, followed by content then the closing tag.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;tagname&gt;</span>some content<span class="nt">&lt;/tagname&gt;</span>
+</code></pre>
+</div>
+
+<p>Example of a paragraph:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>this is a small paragraph<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<p>Example of a heading:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>This is a big heading<span class="nt">&lt;/h1&gt;</span>
+</code></pre>
+</div>
+
+<p>Some HTML elements do not need a closing tag as they are used to place standalone elements on the webpage. For example:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;br&gt;</span>  <span class="c">&lt;!-- A Break, to change line in paragraphs--&gt;</span>
+<span class="nt">&lt;hr&gt;</span>  <span class="c">&lt;!-- Horizontal ruler --&gt;</span>
+<span class="nt">&lt;img&gt;</span> <span class="c">&lt;!-- Image --&gt;</span>
+
+<span class="c">&lt;!-- Extra Tip: The elements inside these type of brackets
+are comments, and will not appear visible --&gt;</span>
+
+</code></pre>
+</div>
+<hr />
+<h2 id="lets-get-coding">Let’s get coding!</h2>
+
+<h3 id="the-most-important-thing-about-web-design">The most important thing about web design</h3>
+
+<p>It’s not design at all, it is not the color, but just the content, your content will define all the layout.
+Lets put some content on our blank page and see how it will make our landing page development a breeze.
+Lets give it a title as an &lt;h1&gt;, and write a paragraph as a &lt;p&gt;, or copy paste some text that will be the foundation of your first web page.</p>
+
+<p>Let’s also add a link to another web-page, since the internet is fundamentally about connecting you to the next computer on the network.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>
+<span class="nt">&lt;h1&gt;</span>My First Step into Web<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://en.wikipedia.org/wiki/Web_Design"</span><span class="nt">&gt;</span>More information about Web-Design...<span class="nt">&lt;/a&gt;</span>
+</code></pre>
+</div>
+
+<p>Here is an example if you feel lazy, notice how the tags open and close, and also how the heading needs to be closed before opening a paragraph tag.
+What would happen if we didn’t close the heading tag? Try it out…</p>
+
+<p>Almost 90% of every web page is text, and if you can see it being displayed you are already 90% done,
+but it doesn’t look pretty at all.</p>
+
+<hr />
+
+<p>If you don’t understand some of the elements, here is a brief run-down.</p>
+
+<h3 id="element-headings">Element: Headings</h3>
+
+<p>Headings come in 6 sizes</p>
+
+<h1 id="h1headingh1"><code class="highlighter-rouge">&lt;h1&gt;Heading&lt;/h1&gt;</code></h1>
+<h2 id="h2headingh2"><code class="highlighter-rouge">&lt;h2&gt;Heading&lt;/h2&gt;</code></h2>
+<h3 id="h3headingh3"><code class="highlighter-rouge">&lt;h3&gt;Heading&lt;/h3&gt;</code></h3>
+<h4 id="h4headingh4"><code class="highlighter-rouge">&lt;h4&gt;Heading&lt;/h4&gt;</code></h4>
+<h5 id="h5headingh5"><code class="highlighter-rouge">&lt;h5&gt;Heading&lt;/h5&gt;</code></h5>
+<h6 id="h6headingh6"><code class="highlighter-rouge">&lt;h6&gt;Heading&lt;/h6&gt;</code></h6>
+
+<p>A <code class="highlighter-rouge">h1</code> defines the largest heading whereas a <code class="highlighter-rouge">h6</code> defines the smallest.</p>
+
+<h3 id="element-paragraph-p">Element: Paragraph <code class="highlighter-rouge">&lt;p&gt;</code></h3>
+
+<p>Putting content into a <code class="highlighter-rouge">&lt;p&gt;</code> tag will break your text up into paragraphs. This helps make the content of your page easier to read for the user.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+  Lorem ipsum is one of those texts you will see very often on people who just started laying out a web-page.
+<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="element-link-a">Element: Link <code class="highlighter-rouge">&lt;a&gt;</code></h3>
+
+<p>A link lets the user click through to another webpage. We use the attribute <code class="highlighter-rouge">href</code> to indicate where you want the user to go.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://en.wikipedia.org/wiki/Web_Design"</span><span class="nt">&gt;</span>More information about Web-Design...<span class="nt">&lt;/a&gt;</span>
+</code></pre>
+</div>
+
+<hr />
+
+<h2 id="diving-into-cascading-style-sheets">Diving into Cascading Style Sheets</h2>
+
+<p>Altough we said we are 90% done, it does not look pretty all, let’s get more introduced to CSS.</p>
+
+<h3 id="why-css-and-not-just-html">Why CSS, and not just HTML?</h3>
+
+<p>During the early stages of HTML, quite a lot of extra markup was required to change colors, text-positioning and style of elements, which made any page almost impossible to understand clearly in a mess of content, style and rules which were very specific to each element.
+This was not efficient to mantain, as people wanted to separate form and structure from style and appearence.
+A proposal was made for externalizing the style into a separate document now simply called CSS to ease up the content writing and it’s style formatting</p>
+
+<p>Nowadays, we can bring a piece of text to life with colors, fonts and positioning all around for every specific device by writing rules.</p>
+
+<h3 id="how-css-rules-work">How CSS Rules Work</h3>
+
+<p>In your CSS window, you can try typing</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">p</span><span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;}</span>
+</code></pre>
+</div>
+
+<p>You will see almost instantly, text changing from its black default color to blue. But not the heading or the link, just the paragraph text.</p>
+
+<p>You can read this as:</p>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">who</span><span class="p">{</span> <span class="py">what</span><span class="p">:</span> <span class="n">how</span><span class="p">;}</span>
+</code></pre>
+</div>
+
+<p>And sometimes you might get the rules confused for trying to change the background color vs the text-color, and plenty of others.</p>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">p</span><span class="p">{</span>
+<span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>You may delete this after you have played around with the colours.</p>
+
+<p>And since our text still needs a lot of rules to be defined, we are going to start from it’s main base before going into the finer details. Lets start by giving it some readability.</p>
+
+<p>Positioning is the difference between making something look readable, and pure information overload.</p>
+
+<blockquote>
+  <p>The <code class="highlighter-rouge">//</code> are comments, try writing the rules one by one until you are happy with how the text is positioned.</p>
+</blockquote>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">body</span><span class="p">{</span>
+ <span class="err">//</span><span class="nl">background-color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+ <span class="err">//</span><span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+ <span class="nl">width</span><span class="p">:</span> <span class="m">800px</span><span class="p">;</span>
+ <span class="err">//</span><span class="nl">margin-left</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+ <span class="err">//</span><span class="nl">margin-top</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+ <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+ <span class="err">//</span><span class="nl">font-size</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>If you are in CodePen, you won’t see the body tag anywhere, but it’s essentially all around the code you wrote, there are also some invisible parts like &lt;head&gt; which will define title and other attributes of your HTML document, but we’ll discuss these at a later time.</p>
+
+<p>As you can see, width gives our webpage its horizontal space.</p>
+
+<p>Playing with margins will allow you to generate spaces around elements.</p>
+
+<p>Margin: 0 auto is a rule to center it no matter the situation.</p>
+
+<p>Line-height allows us to define how much height we want every paragraph to have, so the text can breathe from top and bottom.</p>
+
+<hr />
+
+<h3 id="fonts--spacings">Fonts &amp; Spacings</h3>
+
+<p>In case you feel lost already, <a href="http://codepen.io/knuxus/pen/bwrwOR">this is how your project should look like</a></p>
+
+<p>And the main font still could be improved, since readability is our concern let’s add another css rule to our body.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">body</span><span class="p">{</span>
+<span class="err">//</span> <span class="err">...</span>
+<span class="nl">line-height</span><span class="p">:</span> <span class="m">1.5</span><span class="p">;</span>
+<span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Helvetica'</span><span class="p">,</span> <span class="s2">'Arial'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nl">padding</span><span class="p">:</span> <span class="m">4em</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+  <span class="nl">padding-top</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<blockquote>
+  <p><code class="highlighter-rouge">em</code> are the same pixel value of your current font-size, if you haven’t set it, it defaults to 16px.</p>
+</blockquote>
+
+<p>If you have those fonts you will see that it will nicely change the font of all our text and make it look much nicer.</p>
+
+<p>This CSS rules have much more than just one parameter how we are used to before, in this specific case, for people who don’t have Helvetica font, will see Arial, if not Arial a default sans-serif font will be applied which even exists in low level systems.</p>
+
+<blockquote>
+  <p>If you want to experiment with different fonts, and serifed fonts try adding Georgia on top of that list of fonts.</p>
+</blockquote>
+
+<p>It feels like the layout of this page is already quite readable and fully positioned around its content, but we could add some subtle changes to further improve its readability</p>
+
+<hr />
+
+<h3 id="finding-balance-in-color-and-contrast">Finding balance in color and contrast</h3>
+
+<p>Black text on white background doesn’t always cause a great impression, and in greater lenghts can be quite tiring to read over a long period of time.
+Usually people try to tone it down by using a shade of grey or other possible faded color to make their text subtle, attractive and less default.</p>
+
+<p>Apply the first commented rule if you want to go to a nicer shade, or the default grey referred as <code class="highlighter-rouge">#555</code> is usually enough for every eye out there.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">body</span><span class="p">{</span>
+  <span class="err">//</span> <span class="err">...</span>
+  <span class="err">//</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#566b78</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#555</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="err">//...</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#333</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+
+<p>Another thing you might notice that our <code class="highlighter-rouge">a</code> tag is looking blue and not very impressive. Let’s make our mark on it and use a string color to call for attention.</p>
+
+<p>Sometimes I don’t have to remember all the colors out there or use my color selector tool, many tools like <a href="https://flatuicolors.com/">flatuicolors.com</a> ease our web design process.</p>
+
+<p>Choose any color which you would like to apply to our link. This will also be your primary color to use throught the site.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">a</span><span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#e74c3c</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>This link could be positioned better, and have a much nicer and modern look. Let’s use some more css rules that could benefit all your text.</p>
+
+<p>Altough a lot of these sound simple, take a moment to ask your mentor or browse some of them that do not make any sense.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="err">//</span> <span class="err">add</span> <span class="err">a</span> <span class="err">border</span> <span class="err">around</span> <span class="err">the</span> <span class="err">link</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="m">#e74c3c</span><span class="p">;</span>
+  <span class="err">//</span> <span class="err">make</span> <span class="err">it</span> <span class="err">rounder</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#e74c3c</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">0.6em</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">0.2em</span><span class="p">;</span>
+  <span class="err">//</span> <span class="err">make</span> <span class="err">more</span> <span class="err">space</span> <span class="err">for</span> <span class="err">the</span> <span class="err">link</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">1em</span> <span class="m">2em</span><span class="p">;</span>
+  <span class="err">//</span> <span class="err">let</span> <span class="err">the</span> <span class="err">link</span> <span class="err">be</span> <span class="err">all</span> <span class="err">in</span> <span class="err">uppercase</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+  <span class="err">//</span> <span class="err">remove</span> <span class="err">the</span> <span class="err">line</span> <span class="err">under</span> <span class="err">the</span> <span class="err">link</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="err">//</span> <span class="err">these</span> <span class="err">are</span> <span class="err">just</span> <span class="err">a</span> <span class="err">bit</span> <span class="err">advanced</span> <span class="err">for</span> <span class="err">your</span> <span class="err">first</span> <span class="err">css</span> <span class="err">lesson,</span> <span class="err">but</span> <span class="err">don't</span> <span class="err">be</span> <span class="err">dissapointed</span> <span class="err">they</span> <span class="err">make</span> <span class="err">everything</span> <span class="err">look</span> <span class="err">cooler</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="nb">none</span> <span class="m">200ms</span> <span class="n">ease-out</span><span class="p">;</span>
+  <span class="err">//</span> <span class="err">but</span> <span class="err">we</span> <span class="err">will</span> <span class="err">transition</span> <span class="err">the</span> <span class="err">color</span> <span class="err">and</span> <span class="err">background</span> <span class="err">in</span> <span class="err">case</span> <span class="err">they</span> <span class="err">change.</span>
+  <span class="nl">transition-property</span><span class="p">:</span> <span class="n">color</span><span class="p">,</span> <span class="n">background</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="nt">This</span> <span class="nt">will</span> <span class="nt">only</span> <span class="nt">apply</span> <span class="nt">to</span> <span class="nt">link</span> <span class="nt">hover</span> <span class="nt">state</span><span class="o">,</span> <span class="nt">usually</span> <span class="nt">called</span> <span class="nt">a</span> <span class="nt">pseudo-selector</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#e74c3c</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+
+<p>Makes much more sense, right? Remove the comments of this css as soon as you understand the rules of each of those declarations.</p>
+
+<hr />
+<h3 id="adding-more-identity">Adding more identity</h3>
+
+<p>Since the web has evolved, people are not only limited to the basic system fonts or simple colors, we have tools like Google Fonts, and a few others that can virtually bring any type into the web.</p>
+
+<p>Visit <a href="https://fonts.google.com/">Google Fonts</a> and choose a font that would work for your page.</p>
+
+<p>If you feeling undecisive, choose a sans-serif font. If that still doesn’t help, choose Roboto, Open Sans or Lato.</p>
+
+<p>Different fonts will make subtle changes to the general feel of the website, sometimes you need to be more serious, sometimes more playful. Let’s go with Roboto for our website.</p>
+
+<p>Pressing the plus icon on the font you can see it in a small popup drawer and using the <code class="highlighter-rouge">@import</code> method you can copy paste that entire line inside your CSS area, on top of everything like this:</p>
+
+<p>And don’t forget to change our font-family declaration to include it as the first font.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="k">@import</span> <span class="s2">'https://fonts.googleapis.com/css?family=Roboto'</span><span class="p">;</span>
+
+<span class="nt">body</span><span class="p">{</span>
+  <span class="err">//</span> <span class="err">...</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Roboto'</span><span class="p">,</span> <span class="s2">'Helvetica'</span><span class="p">,</span> <span class="s2">'Arial'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Try to take a moment to appreciate how nice and simple this look, but also how much code have you already learned to make this.</p>
+
+<hr />
+<h3 id="an-img-is-worth-a-thousand-words">An <code class="highlighter-rouge">&lt;img&gt;</code> is worth a thousand words</h3>
+
+<p>So far we’ve learned about how to add text, headings and links to our page. Now let’s add some images!
+If we are doing this on your computer,  we’ll need to add the image files we want to use to the project folder. If you are still on CodePen, skip the next line.
+It’s very important to keep images in their own folder, so first, create a folder called ‘images’ inside the same folder as your HTML file.
+Next, download the images you’ll need. Do this by right clicking on each of the following links, select ‘Save Link As…’, and save it to the images folder you just created.</p>
+
+<p>I would usually recommend going for a higher quality image, that you either have taken in the past, or using sources like <a href="https://unsplash.com/">Unsplash</a>.</p>
+
+<p>Choose anything that you like, since this is a web design site we will go with <a href="https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d">this one.</a></p>
+
+<p>Let’s first add it to our HTML, just to see how it looks, and later move it around where it really matters.</p>
+
+<p>Here is a brief explanation how the element works.</p>
+
+<h3 id="element-image-img">Element: Image <code class="highlighter-rouge">&lt;img&gt;</code></h3>
+
+<p>Images are primarily made up of three attributes</p>
+
+<ul>
+  <li>the <code class="highlighter-rouge">&lt;img&gt;</code> tag</li>
+  <li>the <code class="highlighter-rouge">src</code> attribute, which lets the page know what image we want to view</li>
+  <li>the <code class="highlighter-rouge">alt</code> attribute, this provides extra information if the image cannot be seen on the webpage for any reason</li>
+</ul>
+
+<p>In order for us to see this image on the webpage we need to link to the image, this involves telling the webpage where it is and what it is called. Before the main heading of the page, add the following</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d"</span> <span class="na">alt=</span><span class="s">"codeatuni.io"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<p>Here you can see we have told the <code class="highlighter-rouge">src</code> of the image to look in either a file or a url, then we have given it a relevant <code class="highlighter-rouge">alt</code> attribute.</p>
+
+<p>If you think its too big, try applying some css to it like this:</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">img</span><span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<hr />
+<h3 id="defining-semantic-sections">Defining Semantic Sections</h3>
+
+<p>Before we proceed we have to get better at naming things.
+Let’s call the first section of our heading and image a header, and everything else main section.</p>
+
+<p>Recently in HTML there has been a push for semantics, for robots and humans to understand where does important content usually sit, and what can be discarded as not part of the content.
+Imagine like footers, sidebars and headers are not usually the main reason people go to websites, or when google indexes those, they also try to read the value of the content and not really worry about all the finer details in footers or sidebars.</p>
+
+<p>Let’s wrap up our existing code in two sections, and even add a third one, calling it footer.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>    <span class="nt">&lt;header&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d"</span> <span class="na">alt=</span><span class="s">"codeatuni.io"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>My First Step into Web<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://en.wikipedia.org/wiki/Web_Design"</span><span class="nt">&gt;</span>About Web-Design<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="nt">&lt;main&gt;</span>
+        <span class="nt">&lt;p&gt;</span>
+          Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; ser experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all.
+        <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>
+          The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.
+        <span class="nt">&lt;/p&gt;</span>
+        <span class="c">&lt;!-- &lt;a href="http://en.wikipedia.org/wiki/Web_Design"&gt;More information about Web-Design...&lt;/a&gt; --&gt;</span>
+        <span class="nt">&lt;br&gt;</span>
+    <span class="nt">&lt;/main&gt;</span>
+    <span class="nt">&lt;footer&gt;</span>
+        <span class="nt">&lt;p&gt;</span><span class="ni">&amp;copy;</span> My Awesome First Website - Developed with help of CodeAtUni<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/footer&gt;</span>
+</code></pre>
+</div>
+
+<p>Let’s also add some css regarding our new footer section.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">footer</span><span class="p">{</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">0.7em</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ddd</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>If you feel lost here is how <a href="http://codepen.io/knuxus/pen/ZpoBwY?editors=1100">it should look like.</a></p>
+
+<hr />
+
+<h3 id="modern-big-hero-images">Modern, big hero images</h3>
+
+<p>That re-arrangement of elements happened for a reason, not only google is more able to read our site, but also we can now apply some beatiful full-width imagery on it, like the current modern trend of websites use. If you see AirBnB, Paypal, etc.. they all have a big image on the background, text on top… as you start coding more and more you will notice a lot of trends like that one.</p>
+
+<p>So let’s be trendy. Remove our <code class="highlighter-rouge">&lt;img&gt;</code> element but keep its src value and call it a background image to our header attribute in css.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">header</span><span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url('https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d')</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Not pretty at all, we will have to move some more CSS classes around until we get the desired effect.</p>
+
+<p>Remove the width and margin and padding from body, and move it to a new declaration of the <code class="highlighter-rouge">&lt;main&gt;</code> element, all this inside your css.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">main</span><span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">800px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">4em</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Black text never looks good on this background, so lets change it to white. But since we have already defined one of the colors for headings we need to redefine it more specifically.</p>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">header</span> <span class="nt">h1</span><span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>By telling <code class="highlighter-rouge">header h1</code> we are saying all the <code class="highlighter-rouge">&lt;h1&gt;</code> elements inside of our <code class="highlighter-rouge">&lt;header&gt;</code> element, this will be necessary for every next declaration out there.</p>
+
+<p>You may notice that we are still having some margins on every side of the page, we need to apply a simple rule to our body to prevent those margins from appearing.</p>
+
+<p>This process is called in the industry a CSS Reset, we will just touch the necessary bit of it here, by adding to our body css declaration the value of margin: 0.</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">body</span><span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="err">//...</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<hr />
+
+<h2 id="extra-points">Extra Points</h2>
+
+<h3 id="twitter-share">Twitter share</h3>
+
+<p>Add a share on twitter link along with your other sharing links.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://twitter.com/home?status=I love coding HTML! via @codeatuni"</span><span class="nt">&gt;</span>Share your love of coding on twitter<span class="nt">&lt;/a&gt;</span>
+</code></pre>
+</div>
+<hr />
+<p>This ends our first lesson, we hope you enjoyed it and learnt something.
+If you have some spare time how about going back through this tutorial and, by yourself,
+make some amendments.</p>
+
+<p>If there is something you did not understand or want to give us some feedback,
+ please <a href="mailto:feedback@codeatuni.io">send us an email.</a> or come and chat on our slack!</p>
+
+<h2 id="further-reading">Further reading</h2>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element">HTML elements</a></li>
+</ul>
+
+    </div>
+  </article>
+</div>
+
+      </div>
+    </div>
+    <footer>
+  <a href='http://tutorials.codeatuni.io/'>Back to tutorials</a>
+  <a href='http://codeatuni.com/'>codeatuni</a>
+</footer>
+
+  </body>
+</html>
