@@ -3,6 +3,17 @@ layout: page
 title: Landing Page in 90 Minutes
 ---
 
+## Tutorial Steps
+
+1. [Introduction to HTML](#introduction-to-html)
+1. [HTML Elements](#html-elements)
+1. [Let's get coding!](#let's-get-coding)
+1. [Diving into CSS](#diving-into-css)
+1. [Semanting HTML](#semantic-html)
+1. [Extra Points](#extra-points)
+
+-----
+
 ## Introduction to HTML
 
 In the first 10 minutes we are going to look at:
@@ -128,12 +139,11 @@ If you don't understand some of the elements, here is a brief run-down.
 
 -----
 
-## Diving into Cascading Style Sheets
+## Diving into CSS
 
 Altough we said we are 90% done, it does not look pretty all, let's get more introduced to CSS.
 
 ### Why CSS, and not just HTML?
-
 
 During the early stages of HTML, quite a lot of extra markup was required to change colors, positioning and other style changes.
 It made any page almost impossible to understand.
@@ -371,7 +381,7 @@ img{
 }
 ```
 -----
-### Defining Semantic Sections
+## Semanting HTML
 
 Before we proceed we have to get better at naming things.
 
