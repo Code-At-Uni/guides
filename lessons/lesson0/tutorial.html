@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/main.css">
-
+    <link rel="stylesheet" href="../../css/main.css">
+    <title> Landing Page in 90 Minutes </title>
     <!-- IE 6, 7, 8 and 9 -->
     <!--[if IE]>
     <script type="text/javascript" src="http://stuk.github.io/jszip-utils/dist/jszip-utils-ie.js"></script>
@@ -20,7 +20,20 @@
       </header>
       
     <div class="wrapper">
-      <h2 id="introduction-to-html">Introduction to HTML</h2>
+      <h2 id="tutorial-steps">Tutorial Steps</h2>
+
+<ol>
+  <li><a href="#introduction-to-html">Introduction to HTML</a></li>
+  <li><a href="#html-elements">HTML Elements</a></li>
+  <li><a href="#let's-get-coding">Let’s get coding!</a></li>
+  <li><a href="#diving-into-css">Diving into CSS</a></li>
+  <li><a href="#semantic-html">Semanting HTML</a></li>
+  <li><a href="#extra-points">Extra Points</a></li>
+</ol>
+
+<hr />
+
+<h2 id="introduction-to-html">Introduction to HTML</h2>
 
 <p>In the first 10 minutes we are going to look at:</p>
 
@@ -83,11 +96,17 @@ are comments, and will not appear visible --&gt;</span>
 
 <h3 id="the-most-important-thing-about-web-design">The most important thing about web design</h3>
 
-<p>It’s not design at all, it is not the color, but just the content, your content will define all the layout.
-Lets put some content on our blank page and see how it will make our landing page development a breeze.
-Lets give it a title as an &lt;h1&gt;, and write a paragraph as a &lt;p&gt;, or copy paste some text that will be the foundation of your first web page.</p>
+<p>The purpose of design is to present the content. That’s it.
+Content is the primary element of a website, it should never be last on your list to add after you web designed it.
+Written content mostly, is 90% of the Web, however the way we style it will teach us all about the design aspects.</p>
 
-<p>Let’s also add a link to another web-page, since the internet is fundamentally about connecting you to the next computer on the network.</p>
+<p>Lets put some content on our blank page:</p>
+
+<ul>
+  <li>Lets give it a title as an &lt;h1&gt;</li>
+  <li>Write a paragraph as a &lt;p&gt; (or find some text to be the foundation of your page)</li>
+  <li>Let’s also add a link to another web-page (since internet is always about connecting you to the next computer on the network)</li>
+</ul>
 
 <div class="language-html highlighter-rouge"><pre class="highlight"><code>
 <span class="nt">&lt;h1&gt;</span>My First Step into Web<span class="nt">&lt;/h1&gt;</span>
@@ -107,48 +126,69 @@ but it doesn’t look pretty at all.</p>
 
 <p>If you don’t understand some of the elements, here is a brief run-down.</p>
 
-<h3 id="element-headings">Element: Headings</h3>
+<blockquote>
+  <h4 id="element-headings">🔎 Element: Headings</h4>
 
-<p>Headings come in 6 sizes</p>
+  <p>Headings come in 6 sizes</p>
 
-<h1 id="h1headingh1"><code class="highlighter-rouge">&lt;h1&gt;Heading&lt;/h1&gt;</code></h1>
-<h2 id="h2headingh2"><code class="highlighter-rouge">&lt;h2&gt;Heading&lt;/h2&gt;</code></h2>
-<h3 id="h3headingh3"><code class="highlighter-rouge">&lt;h3&gt;Heading&lt;/h3&gt;</code></h3>
-<h4 id="h4headingh4"><code class="highlighter-rouge">&lt;h4&gt;Heading&lt;/h4&gt;</code></h4>
-<h5 id="h5headingh5"><code class="highlighter-rouge">&lt;h5&gt;Heading&lt;/h5&gt;</code></h5>
-<h6 id="h6headingh6"><code class="highlighter-rouge">&lt;h6&gt;Heading&lt;/h6&gt;</code></h6>
+  <h1 id="h1headingh1"><code class="highlighter-rouge">&lt;h1&gt;Heading&lt;/h1&gt;</code></h1>
+  <h2 id="h2headingh2"><code class="highlighter-rouge">&lt;h2&gt;Heading&lt;/h2&gt;</code></h2>
+  <h3 id="h3headingh3"><code class="highlighter-rouge">&lt;h3&gt;Heading&lt;/h3&gt;</code></h3>
+  <h4 id="h4headingh4"><code class="highlighter-rouge">&lt;h4&gt;Heading&lt;/h4&gt;</code></h4>
+  <h5 id="h5headingh5"><code class="highlighter-rouge">&lt;h5&gt;Heading&lt;/h5&gt;</code></h5>
+  <h6 id="h6headingh6"><code class="highlighter-rouge">&lt;h6&gt;Heading&lt;/h6&gt;</code></h6>
 
-<p>A <code class="highlighter-rouge">h1</code> defines the largest heading whereas a <code class="highlighter-rouge">h6</code> defines the smallest.</p>
+  <p>A <code class="highlighter-rouge">h1</code> defines the most important heading whereas a <code class="highlighter-rouge">h6</code> defines the least important.</p>
+</blockquote>
 
-<h3 id="element-paragraph-p">Element: Paragraph <code class="highlighter-rouge">&lt;p&gt;</code></h3>
+<blockquote>
+  <h4 id="element-paragraph-p">🔎 Element: Paragraph <code class="highlighter-rouge">&lt;p&gt;</code></h4>
 
-<p>Putting content into a <code class="highlighter-rouge">&lt;p&gt;</code> tag will break your text up into paragraphs. This helps make the content of your page easier to read for the user.</p>
+  <p>Putting content into a <code class="highlighter-rouge">&lt;p&gt;</code> tag will break your text up into paragraphs. 
+This helps make the content of your page easier to read for the user.</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
+  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
   Lorem ipsum is one of those texts you will see very often on people who just started laying out a web-page.
 <span class="nt">&lt;/p&gt;</span>
 </code></pre>
-</div>
+  </div>
+</blockquote>
 
-<h3 id="element-link-a">Element: Link <code class="highlighter-rouge">&lt;a&gt;</code></h3>
-
-<p>A link lets the user click through to another webpage. We use the attribute <code class="highlighter-rouge">href</code> to indicate where you want the user to go.</p>
-
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://en.wikipedia.org/wiki/Web_Design"</span><span class="nt">&gt;</span>More information about Web-Design...<span class="nt">&lt;/a&gt;</span>
+<blockquote>
+  <h4 id="element-link-a">🔎 Element: Link <code class="highlighter-rouge">&lt;a&gt;</code></h4>
+  <p>A link lets the user click through to another webpage. We use the attribute <code class="highlighter-rouge">href</code> to indicate where you want the user to go.</p>
+  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://en.wikipedia.org/wiki/Web_Design"</span><span class="nt">&gt;</span>More information about Web-Design...<span class="nt">&lt;/a&gt;</span>
 </code></pre>
-</div>
+  </div>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <p>refresh content</p>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
 
 <hr />
 
-<h2 id="diving-into-cascading-style-sheets">Diving into Cascading Style Sheets</h2>
+<h2 id="diving-into-css">Diving into CSS</h2>
 
 <p>Altough we said we are 90% done, it does not look pretty all, let’s get more introduced to CSS.</p>
 
 <h3 id="why-css-and-not-just-html">Why CSS, and not just HTML?</h3>
 
-<p>During the early stages of HTML, quite a lot of extra markup was required to change colors, text-positioning and style of elements, which made any page almost impossible to understand clearly in a mess of content, style and rules which were very specific to each element.
-This was not efficient to mantain, as people wanted to separate form and structure from style and appearence.
-A proposal was made for externalizing the style into a separate document now simply called CSS to ease up the content writing and it’s style formatting</p>
+<p>During the early stages of HTML, quite a lot of extra markup was required to change colors, positioning and other style changes.
+It made any page almost impossible to understand.
+Rules existed for some elements and people were always getting errors in their html.
+This wasn’t maintainable. People wanted to separate form and structure from style and appearance.</p>
+
+<p>A proposal was made for externalizing the style into a separate document now simply called CSS to ease up the content writing and it’s style formatting</p>
 
 <p>Nowadays, we can bring a piece of text to life with colors, fonts and positioning all around for every specific device by writing rules.</p>
 
@@ -341,14 +381,17 @@ Usually people try to tone it down by using a shade of grey or other possible fa
 <p>Try to take a moment to appreciate how nice and simple this look, but also how much code have you already learned to make this.</p>
 
 <hr />
-<h3 id="an-img-is-worth-a-thousand-words">An <code class="highlighter-rouge">&lt;img&gt;</code> is worth a thousand words</h3>
+<h3 id="an--img--is-worth-a-thousand-words">An &lt; img &gt; is worth a thousand words</h3>
 
-<p>So far we’ve learned about how to add text, headings and links to our page. Now let’s add some images!
-If we are doing this on your computer,  we’ll need to add the image files we want to use to the project folder. If you are still on CodePen, skip the next line.
-It’s very important to keep images in their own folder, so first, create a folder called ‘images’ inside the same folder as your HTML file.
-Next, download the images you’ll need. Do this by right clicking on each of the following links, select ‘Save Link As…’, and save it to the images folder you just created.</p>
+<p>So far we’ve learned about how to add text, headings and links to our page. Now let’s add some images! If we are doing this on your computer, we’ll need to add the image files we want to use to the project folder. If you are still on CodePen, skip the next line.</p>
 
-<p>I would usually recommend going for a higher quality image, that you either have taken in the past, or using sources like <a href="https://unsplash.com/">Unsplash</a>.</p>
+<p>It’s good practice to keep images in their own folder, so first, create a folder called ‘images’ inside the same folder as your index.html file.</p>
+
+<p>Next, download the images you’ll need. Do this by right clicking on the following link, select ‘Save Link As…’, and save it to the images folder you just created.</p>
+
+<blockquote>
+  <p>We would usually recommend going for a higher quality image, that you either have taken in the past, or using sources like <a href="https://unsplash.com/">Unsplash</a>.</p>
+</blockquote>
 
 <p>Choose anything that you like, since this is a web design site we will go with <a href="https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d">this one.</a></p>
 
@@ -356,15 +399,18 @@ Next, download the images you’ll need. Do this by right clicking on each of th
 
 <p>Here is a brief explanation how the element works.</p>
 
-<h3 id="element-image-img">Element: Image <code class="highlighter-rouge">&lt;img&gt;</code></h3>
+<blockquote>
+  <h4 id="element-image-img">🔎 Element: Image <code class="highlighter-rouge">&lt;img&gt;</code></h4>
 
-<p>Images are primarily made up of three attributes</p>
+  <p>Images are primarily made up of three attributes</p>
 
-<ul>
-  <li>the <code class="highlighter-rouge">&lt;img&gt;</code> tag</li>
-  <li>the <code class="highlighter-rouge">src</code> attribute, which lets the page know what image we want to view</li>
-  <li>the <code class="highlighter-rouge">alt</code> attribute, this provides extra information if the image cannot be seen on the webpage for any reason</li>
-</ul>
+  <ul>
+    <li>the <code class="highlighter-rouge">&lt;img&gt;</code> tag</li>
+    <li>the <code class="highlighter-rouge">src</code> attribute, which lets the page know what image we want to view</li>
+    <li>the <code class="highlighter-rouge">alt</code> attribute, this provides extra information if the image cannot be seen on the webpage for any reason</li>
+  </ul>
+
+</blockquote>
 
 <p>In order for us to see this image on the webpage we need to link to the image, this involves telling the webpage where it is and what it is called. Before the main heading of the page, add the following</p>
 
@@ -383,13 +429,19 @@ Next, download the images you’ll need. Do this by right clicking on each of th
 </code></pre>
 </div>
 <hr />
-<h3 id="defining-semantic-sections">Defining Semantic Sections</h3>
+<h2 id="semanting-html">Semanting HTML</h2>
 
-<p>Before we proceed we have to get better at naming things.
-Let’s call the first section of our heading and image a header, and everything else main section.</p>
+<p>Before we proceed we have to get better at naming things.</p>
 
-<p>Recently in HTML there has been a push for semantics, for robots and humans to understand where does important content usually sit, and what can be discarded as not part of the content.
-Imagine like footers, sidebars and headers are not usually the main reason people go to websites, or when google indexes those, they also try to read the value of the content and not really worry about all the finer details in footers or sidebars.</p>
+<p>Let’s call the first section of our heading and image a header, and everything else main section.</p>
+<blockquote>
+  <h4 id="extra-notes">📘 Extra Notes:</h4>
+  <p>It has become increasingly important in HTML to make it more readable by not just humans but robots as well; you probably know this as Search Engine Optimisation (or SEO)</p>
+
+  <p>For instance, footers, sidebars and headers are not usually the main reason people go to websites so when Google’s army of web crawler robots index those, they focus on reading the parts you defined as content and ignore the finer details in footers or sidebars.</p>
+
+  <p>There is a whole industry dedicated to making your website more Google friendly and this is the basis of what they do.</p>
+</blockquote>
 
 <p>Let’s wrap up our existing code in two sections, and even add a third one, calling it footer.</p>
 
