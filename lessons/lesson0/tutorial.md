@@ -6,15 +6,16 @@ title: Landing Page in 90 Minutes
 ## Tutorial Steps
 
 1. [Introduction to HTML](#introduction-to-html)
-1. [HTML Elements](#html-elements)
-1. [Let's get coding!](#let's-get-coding)
-1. [Diving into CSS](#diving-into-css)
-1. [Semanting HTML](#semantic-html)
-1. [Extra Points](#extra-points)
+2. [HTML Elements](#html-elements)
+3. [Let's get coding!](#let's-get-coding)
+4. [Diving into CSS](#diving-into-css)
+5. [Semanting HTML](#semantic-html)
+6. [Adding A Sidebar](#adding-a-sidebar)
+7. [Extra Points](#extra-points)
 
 -----
 
-## Introduction to HTML
+## 1.Introduction to HTML
 
 In the first 10 minutes we are going to look at:
 
@@ -36,10 +37,12 @@ By the end of this tutorial you will have built [this webpage.](../../examples/l
 
 **HTML** is the language used to build websites. All text and content that you see on the internet is built using HTML.
 
+Try opening any website right now, and try to Inspect it's source, usually by pressing Ctrl+U or Cmd+Alt+U, or just inspecting element if you are in a modern browser.
+
 **CSS** is used with HTML to style the page. We will be learning some of this today but it will also be covered extensively in the next set of tutorials.
 
 
-## HTML elements
+## 2.HTML elements
 
 An **element** is an HTML building block. There are paragraphs, headings, links, lists, and [many more.](https://developer.mozilla.org/en/docs/Web/HTML/Element)
 
@@ -72,8 +75,11 @@ Some HTML elements do not need a closing tag as they are used to place standalon
 are comments, and will not appear visible -->
 
 ```
+
+To view all the possible tags you can use refer to [W3C Schools HTML Tag List](http://www.w3schools.com/tags/)
+
 -----
-## Let's get coding!
+## 3.Let's get coding!
 
 
 ### The most important thing about web design
@@ -182,17 +188,17 @@ And since our text still needs a lot of rules to be defined, we are going to sta
 
 Positioning is the difference between making something look readable, and pure information overload.
 
-> The `//` are comments, try writing the rules one by one until you are happy with how the text is positioned.
+> The `/* some text */` are comments, try writing the rules one by one until you are happy with how the text is positioned.
 
 ```css
 body{
- //background-color: pink;
- //color: yellow;
+ /* background-color: pink; */
+ /* color: yellow; */
  width: 800px;
- //margin-left: 100px;
- //margin-top: 50px;
+ /* margin-left: 100px; */
+ /* margin-top: 50px; */
  margin: 0 auto;
- //font-size: 30px;
+ /* font-size: 30px; */
 }
 ```
 
@@ -217,7 +223,7 @@ And the main font still could be improved, since readability is our concern let'
 
 ```css
 body{
-// ...
+/* ... */
 line-height: 1.5;
 font-family: 'Helvetica', 'Arial', sans-serif;
 padding: 4em 1em;
@@ -250,13 +256,13 @@ Apply the first commented rule if you want to go to a nicer shade, or the defaul
 
 ```css
 body{
-  // ...
-  // color: #566b78;
+  /* ... */
+  /* color: #566b78; */
   color: #555;
 }
 
 h1 {
-  //...
+  /* ... */
   color: #333;
 }
 
@@ -281,26 +287,26 @@ Altough a lot of these sound simple, take a moment to ask your mentor or browse 
 ```css
 
 a {
-  // add a border around the link
+  /* add a border around the link */
   border: 2px solid #e74c3c;
-  // make it rounder
+  /* make it rounder */
   border-radius: 20px;
   color: #e74c3c;
   font-size: 0.6em;
   letter-spacing: 0.2em;
-  // make more space for the link
+  /* make more space for the link */
   padding: 1em 2em;
-  // let the link be all in uppercase
+  /* let the link be all in uppercase */
   text-transform: uppercase;
-  // remove the line under the link
+  /* remove the line under the link */
   text-decoration: none;
-  // these are just a bit advanced for your first css lesson, but don't be dissapointed they make everything look cooler
+  /* these are just a bit advanced for your first css lesson, but don't be dissapointed they make everything look cooler */
   transition: none 200ms ease-out;
-  // but we will transition the color and background in case they change.
+  /* but we will transition the color and background in case they change. */
   transition-property: color, background;
 }
 
-// This will only apply to link hover state, usually called a pseudo-selector
+/* This will only apply to link hover state, usually called a pseudo-selector */
 a:hover {
   background: #e74c3c;
   color: white;
@@ -329,7 +335,7 @@ And don't forget to change our font-family declaration to include it as the firs
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 
 body{
-  // ...
+  /* ... */
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 ```
@@ -465,17 +471,116 @@ By telling `header h1` we are saying all the `<h1>` elements inside of our `<hea
 
 You may notice that we are still having some margins on every side of the page, we need to apply a simple rule to our body to prevent those margins from appearing.
 
-This process is called in the industry a CSS Reset, we will just touch the necessary bit of it here, by adding to our body css declaration the value of margin: 0.
+This process is called in the industry a CSS Reset. We will just touch the necessary bit of it here, by adding to our body css declaration the value of margin: 0.
 
 ```css
 body{
   margin: 0;
-  //...
+  /* ... */
 }
 ```
 
 -----
 
+## Adding a Sidebar
+
+Most of the time in HTML and CSS you will be wondering how to position one content next to another. 
+
+You can always try to float content, left or right with css, but usually that will also throw your text all over the place and get you nowhere.
+
+There are a lot of frameworks like Bootstrap, that give you the power of using a grid system in web design. For you to put one element on one row, or two elements in the same row, usually by telling how many columns does it have.
+
+Altough we're not going to use Bootstrap here we will be using the same concept of rows and columns to create a sidebar next to our main piece of content.
+
+Let's wrap our content within a div, with a class row and put an extra element after our main, called aside, just like this:
+
+```html
+    <header>
+        <!-- our header -->
+    </header>
+    <div class="row">
+      <main>
+          <!-- our main content -->
+      </main>
+      <aside>
+        <!-- New content will come here -->
+      </aside>
+    </div>
+    <footer>
+        <!-- our footer content -->
+    </footer>
+```
+
+If we put some more text into our new aside element you will see it does not look pretty at all, and it will try to find its own space within the rules we defined earlier.
+
+Here is an example content for your aside, `<ul>` stands for unordered list, `<li>` for list item, and the rest you already know.
+
+```html
+  <aside>
+     <h3> My Favorite Links</h3>
+     <ul>
+         <li>
+             <a href="http://codeatuni.com">Code at Uni</a>
+         </li>
+         <li>
+             <a href="http://codeacademy.com">Codeacademy</a>
+         </li>
+         <li>
+             <a href="http://wikipedia.com">Wikipedia</a>
+         </li>
+         <li>
+             <a href="http://youtube.com">Youtube</a>
+         </li>
+     </ul>
+  </aside>
+```
+
+Let's go back to CSS and get that row logic sorted.
+
+First, we need to re-order our `main` rules to apply to our newly created `.row`
+
+```css
+
+/* this was our previous main */
+.row{
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 4em 0;
+}
+
+/* our new main has to be smaller to fit the sidebar */
+main{
+ max-width: 70%;
+ float: left;
+}
+
+/* both of elements main and aside need to be aligned to the left,
+ which in css we call float */
+aside{
+  padding: 1em 2em;
+  float: left;
+}
+```
+
+Altough you can now see that our main and sidebar are on the same line, and each has its own space, we see that footer has also gone out of place.
+
+To fix this, and usually all the other problems coming from using `float` we need to clear those floats with a css rule called `clear:both`
+
+If we add it to our footer, it will look something like this:
+
+```css
+footer{
+  clear: both;
+  text-align: center;
+  padding: 2em;
+  font-size: 0.7em;
+  color: #ddd;
+}
+```
+
+And now our footer is back in its previous place, looking even better than before.
+
+-----
 
 ## Extra Points
 
@@ -486,7 +591,26 @@ Add a share on twitter link along with your other sharing links.
 ```html
 <a href="http://twitter.com/home?status=I love coding HTML! via @codeatuni">Share your love of coding on twitter</a>
 ```
+
+### Making first link in our Sidebar different
+
+Some selectors can be so specific in the css that we can style out only the first element, the last, and even much more
+
+In our sidebar, if we wanted to say that our first link needs to be different, we could apply the pseudo selector, `:first-child` to our list like this:
+
+```css
+
+li:first-child a{
+  color: #509bee;
+  font-size: 21px;
+  font-weight: bolder;
+}
+```
+
+There is a lot more of pseudo selectors, that you can see in our example page if you Inspect the other elmenets, try to find them and apply them to your own code.
+
 -----
+
 This ends our first lesson, we hope you enjoyed it and learnt something.
 If you have some spare time how about going back through this tutorial and, by yourself,
 make some amendments.
