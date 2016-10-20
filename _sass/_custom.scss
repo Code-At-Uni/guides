@@ -17,8 +17,8 @@ footer{
   padding: 40px;
   a{
     color: #fff;
-    border: 2px solid #fff;
-    border-radius: 30px;
+    border: 4px solid #fff;
+    font-weight: bold;
     padding: 15px;
   }
 }
@@ -28,7 +28,6 @@ footer{
   li{
     line-height: 60px;
     background-color: #509bee;
-    //background-image: linear-gradient(142deg, #33dcd7, #33c5dc 31%, #33a9dc 65%, #338ddc);
     border-radius: 4px;
     padding: 15px;
     display: block;

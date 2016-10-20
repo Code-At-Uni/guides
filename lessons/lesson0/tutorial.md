@@ -9,9 +9,8 @@ title: Landing Page in 90 Minutes
 2. [HTML Elements](#html-elements)
 3. [Let's get coding!](#let's-get-coding)
 4. [Diving into CSS](#diving-into-css)
-5. [Semanting HTML](#semantic-html)
-6. [Adding A Sidebar](#adding-a-sidebar)
-7. [Extra Points](#extra-points)
+5. [Semantic HTML](#semantic-html)
+6. [Extra Points](#extra-points)
 
 -----
 
@@ -112,7 +111,7 @@ but it doesn't look pretty at all.
 
 If you don't understand some of the elements, here is a brief run-down.
 
-> #### 🔎 Element: Headings
+> #### 🔎 Element: Headings `<h1>`
 >
 > Headings come in 6 sizes
 >
@@ -144,7 +143,7 @@ If you don't understand some of the elements, here is a brief run-down.
 
 -----
 
-## Diving into CSS
+## 4.Diving into CSS
 
 Altough we said we are 90% done, it does not look pretty all, let's get more introduced to CSS.
 
@@ -372,7 +371,7 @@ Here is a brief explanation how the element works.
 In order for us to see this image on the webpage we need to link to the image, this involves telling the webpage where it is and what it is called. Before the main heading of the page, add the following
 
 ```html
-  <img src="https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d" alt="codeatuni.io">
+  <img src="https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d" alt="codeatuni.com">
 ```
 
 Here you can see we have told the `src` of the image to look in either a file or a url, then we have given it a relevant `alt` attribute.
@@ -386,7 +385,7 @@ img{
 }
 ```
 -----
-## Semanting HTML
+## 5.Semantic HTML
 
 Before we proceed we have to get better at naming things.
 
@@ -436,7 +435,7 @@ If you feel lost here is how [it should look like.](http://codepen.io/knuxus/pen
 
 -----
 
-### Modern, big hero images
+### 6.Modern, big hero images
 
 That re-arrangement of elements happened for a reason, not only google is more able to read our site, but also we can now apply some beatiful full-width imagery on it, like the current modern trend of websites use. If you see AirBnB, Paypal, etc.. they all have a big image on the background, text on top... as you start coding more and more you will notice a lot of trends like that one.
 
@@ -481,6 +480,19 @@ body{
 ```
 
 -----
+
+## 7.Extra Points
+
+### Twitter share
+
+Add a share on twitter link along with your other sharing links.
+
+```html
+<a href="http://twitter.com/home?status=I love coding HTML! via @codeatuni">Share your love of coding on twitter</a>
+```
+
+-----
+
 
 ## Adding a Sidebar
 
@@ -582,15 +594,6 @@ And now our footer is back in its previous place, looking even better than befor
 
 -----
 
-## Extra Points
-
-### Twitter share
-
-Add a share on twitter link along with your other sharing links.
-
-```html
-<a href="http://twitter.com/home?status=I love coding HTML! via @codeatuni">Share your love of coding on twitter</a>
-```
 
 ### Making first link in our Sidebar different
 
