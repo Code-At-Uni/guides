@@ -135,7 +135,6 @@ If you don't understand some of the elements, here is a brief run-down.
 > ```html
 > <a href="http://en.wikipedia.org/wiki/Web_Design">More information about Web-Design...</a>
 > ```
->>>>>>> refresh content
 
 -----
 
