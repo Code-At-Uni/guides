@@ -498,18 +498,21 @@ If there is something you did not understand or want to give us some feedback,
 
 * [HTML elements](https://developer.mozilla.org/en/docs/Web/HTML/Element)
 
-# Weekend Coding Course on your campus
+-----
 
--Full course on HTML, CSS, and Javascript for beginners.
--12 hours of instruction led by professional instructors
--This accelerated course ensures you'll learn to code in just one weekend.
--You will have built your own custom website by the end of the weekend.
--Application required and, if you are accepted, course fee is required [£159]. Applications are competitive.
--Free lunch on both days and chance to meet other tech focused students.
+## Weekend Coding Course on your campus
 
-## APPLICATIONS ARE NOW OPEN - LEARN MORE AND APPLY AT: www.codeatuni.com
+- Full course on HTML, CSS, and Javascript for beginners.
+- 12 hours of instruction led by professional instructors
+- This accelerated course ensures you'll learn to code in just one weekend.
+- You will have built your own custom website by the end of the weekend.
+- Application required and, if you are accepted, course fee is required [£159]. Applications are competitive.
+- Free lunch on both days and chance to meet other tech focused students.
+
+### APPLICATIONS ARE NOW OPEN - LEARN MORE AND APPLY AT: [www.codeatuni.com](http://www.codeatuni.com/)
 
 We will accept applicants on the quality of their application, but don't worry: this course is entirely for BEGINNERS - no coding knowledge required!
 
-Like us on Facebook to stay up to date
+[Like us on Facebook](https://www.facebook.com/CodeatUni1) to stay up to date
 
+-----
