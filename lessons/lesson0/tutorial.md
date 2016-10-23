@@ -629,12 +629,17 @@ If there is something you did not understand or want to give us some feedback,
 
 ## Weekend Coding Course on your campus
 
-- Full course on HTML, CSS, and Javascript for beginners.
-- 12 hours of instruction led by professional instructors
-- This accelerated course ensures you'll learn to code in just one weekend.
-- You will have built your own custom website by the end of the weekend.
-- Application required and, if you are accepted, course fee is required [£159]. Applications are competitive.
-- Free lunch on both days and chance to meet other tech focused students.
+
+- Intensive weekend course that will teach you HTML, CSS, and Javascript for beginners.
+- 12 hours of class-based instruction (six hours on Sat and Sun) led by professional coders who will take you from zero to one.
+-Instructors have worked at leading technology companies such as IBM, Apple and Shazam.
+- Build your own custom website by the end of the weekend. Here's an example website from one of our students: http://christinetsai.neocities.org/index.html
+
+- Unparalleled accelerated learning experience means you’ll pack months of individual study into one intensive weekend.
+- Excellent student:teacher ratio results in plenty of one-one time with instructors.
+- Free lunch on both days and opportunities to meet and work with other tech focused Westminster students.
+- Attain a valuable certificate which demonstrates technical capabilities to employers.
+- Application is competitive and tuition to secure your place is £159. 
 
 ### APPLICATIONS ARE NOW OPEN - LEARN MORE AND APPLY AT: [www.codeatuni.com](http://www.codeatuni.com/)
 
