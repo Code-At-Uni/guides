@@ -111,35 +111,60 @@ but it doesn't look pretty at all.
 
 If you don't understand some of the elements, here is a brief run-down.
 
-> #### 🔎 Element: Headings `<h1>`
->
-> Headings come in 6 sizes
->
-> # `<h1>Heading</h1>`
-> ## `<h2>Heading</h2>`
-> ### `<h3>Heading</h3>`
-> #### `<h4>Heading</h4>`
-> ##### `<h5>Heading</h5>`
-> ###### `<h6>Heading</h6>`
->
-> A `h1` defines the most important heading whereas a `h6` defines the least important.
 
-> #### 🔎 Element: Paragraph `<p>`
->
-> Putting content into a `<p>` tag will break your text up into paragraphs.
-> This helps make the content of your page easier to read for the user.
->
-> ```html
-> <p>
->   Lorem ipsum is one of those texts you will see very often on people who just started laying out a web-page.
-> </p>
-> ```
+<div class="tab">
+  <input id="tab-heading" type="checkbox" name="tabs">
 
-> #### 🔎 Element: Link `<a>`
-> A link lets the user click through to another webpage. We use the attribute `href` to indicate where you want the user to go.
-> ```html
-> <a href="http://en.wikipedia.org/wiki/Web_Design">More information about Web-Design...</a>
-> ```
+  <label for="tab-heading">🔎 Element: Headings</label>
+  <div class="tab-content">
+
+    <p>Headings come in 6 sizes</p>
+    <pre>
+      <h1>&#60;h1>Heading 1&#60;/h1></h1>
+      <h2>&#60;h2>Heading 2&#60;/h2></h2>
+      <h3>&#60;h3>Heading 3&#60;/h3></h3>
+      <h4>&#60;h4>Heading 4&#60;/h4></h4>
+      <h5>&#60;h5>Heading 5&#60;/h5></h5>
+      <h6>&#60;h6>Heading 6&#60;/h6></h6>
+    </pre>
+
+    <p>A &#60;h1> defines the most important heading whereas a &#60;h6> defines the least important.</p>
+
+  </div>
+</div>
+
+<div class="tab">
+  <input id="tab-paragraph" type="checkbox" name="tabs">
+
+  <label for="tab-paragraph">🔎 Element: Paragraph</label>
+  <div class="tab-content">
+
+   <p>Putting content into a &#60;p> tag will break your text up into paragraphs.
+     This helps make the content of your page easier to read for the user.</p>
+     <pre>
+       &#60;p>
+       Lorem ipsum is one of those texts you will see very often on people who just started laying out a web-page.
+       &#60;/p>
+     </pre>
+
+   </div>
+
+ </div>
+
+ <div class="tab">
+  <input id="tab-link" type="checkbox" name="tabs">
+
+  <label for="tab-link">🔎 Element: Link</label>
+  <div class="tab-content">
+
+   <p>A link lets the user click through to another webpage. We use the attribute `href` to indicate where you want the user to go.</p>
+   <pre>
+    &#60;a href="http://en.wikipedia.org/wiki/Web_Design">More information about Web-Design... &#60;/a>
+  </pre>
+
+</div>
+
+</div>
 
 -----
 
@@ -359,20 +384,29 @@ Let's first add it to our HTML, just to see how it looks, and later move it arou
 
 Here is a brief explanation how the element works.
 
-> #### 🔎 Element: Image `<img>`
->
-> Images are primarily made up of three attributes
->
-> * the `<img>` tag
-> * the `src` attribute, which lets the page know what image we want to view
-> * the `alt` attribute, this provides extra information if the image cannot be seen on the webpage for any reason
->
+
+<div class="tab">
+  <input id="tab-image" type="checkbox" name="tabs">
+
+  <label for="tab-image">🔎 Element: Image</label>
+  <div class="tab-content">
+    <p>Images are primarily made up of three attributes</p>
+    <ul>
+      <li>the  &#60;img> tag </li>
+      <li>the `src` attribute, which lets the page know what image we want to view </li>
+      <li>the `alt` attribute, this provides extra information if the image cannot be seen on the webpage for any reason</li>
+    </ul>
+    <pre>
+      <code>
+       &#60;img src="https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d" alt="codeatuni.com">
+     </code>
+   </pre>
+
+ </div>
+
+</div>
 
 In order for us to see this image on the webpage we need to link to the image, this involves telling the webpage where it is and what it is called. Before the main heading of the page, add the following
-
-```html
-  <img src="https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d" alt="codeatuni.com">
-```
 
 Here you can see we have told the `src` of the image to look in either a file or a url, then we have given it a relevant `alt` attribute.
 
@@ -649,22 +683,3 @@ We will accept applicants on the quality of their application, but don't worry: 
 
 -----
 
-
-<!--
-
-TODO: Implement this accordion style, to replace blockquotes
-
-<div class="tab">
-  <input id="tab-one" type="checkbox" name="tabs">
-  <label for="tab-one">Label One</label>
-  <div class="tab-content">
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-
-  </div>
-
-</div>
-
-
-
- -->

@@ -59,3 +59,11 @@ input[type=checkbox] + label::after {
 input[type=radio] + label::after {
   content: "\25BC";
 }
+
+
+pre{
+  h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+    line-height: 1;
+  }
+}
