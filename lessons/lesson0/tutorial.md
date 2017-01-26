@@ -126,9 +126,9 @@ If you don't understand some of the elements, here is a brief run-down.
 
 > #### 🔎 Element: Paragraph `<p>`
 >
-> Putting content into a `<p>` tag will break your text up into paragraphs. 
+> Putting content into a `<p>` tag will break your text up into paragraphs.
 > This helps make the content of your page easier to read for the user.
-> 
+>
 > ```html
 > <p>
 >   Lorem ipsum is one of those texts you will see very often on people who just started laying out a web-page.
@@ -345,9 +345,9 @@ Try to take a moment to appreciate how nice and simple this look, but also how m
 ### An < img > is worth a thousand words
 
 
-So far we’ve learned about how to add text, headings and links to our page. Now let’s add some images! If we are doing this on your computer, we’ll need to add the image files we want to use to the project folder. If you are still on CodePen, skip the next line. 
+So far we’ve learned about how to add text, headings and links to our page. Now let’s add some images! If we are doing this on your computer, we’ll need to add the image files we want to use to the project folder. If you are still on CodePen, skip the next line.
 
-It’s good practice to keep images in their own folder, so first, create a folder called ‘images’ inside the same folder as your index.html file. 
+It’s good practice to keep images in their own folder, so first, create a folder called ‘images’ inside the same folder as your index.html file.
 
 Next, download the images you’ll need. Do this by right clicking on the following link, select ‘Save Link As…’, and save it to the images folder you just created.
 
@@ -362,7 +362,7 @@ Here is a brief explanation how the element works.
 > #### 🔎 Element: Image `<img>`
 >
 > Images are primarily made up of three attributes
-> 
+>
 > * the `<img>` tag
 > * the `src` attribute, which lets the page know what image we want to view
 > * the `alt` attribute, this provides extra information if the image cannot be seen on the webpage for any reason
@@ -496,7 +496,7 @@ Add a share on twitter link along with your other sharing links.
 
 ## Adding a Sidebar
 
-Most of the time in HTML and CSS you will be wondering how to position one content next to another. 
+Most of the time in HTML and CSS you will be wondering how to position one content next to another.
 
 You can always try to float content, left or right with css, but usually that will also throw your text all over the place and get you nowhere.
 
@@ -639,7 +639,7 @@ If there is something you did not understand or want to give us some feedback,
 - Excellent student:teacher ratio results in plenty of one-one time with instructors.
 - Free lunch on both days and opportunities to meet and work with other tech focused Westminster students.
 - Attain a valuable certificate which demonstrates technical capabilities to employers.
-- Application is competitive and tuition to secure your place is £159. 
+- Application is competitive and tuition to secure your place is £159.
 
 ### APPLICATIONS ARE NOW OPEN - LEARN MORE AND APPLY AT: [www.codeatuni.com](http://www.codeatuni.com/)
 
@@ -648,3 +648,23 @@ We will accept applicants on the quality of their application, but don't worry: 
 [Like us on Facebook](https://www.facebook.com/CodeatUni1) to stay up to date
 
 -----
+
+
+<!--
+
+TODO: Implement this accordion style, to replace blockquotes
+
+<div class="tab">
+  <input id="tab-one" type="checkbox" name="tabs">
+  <label for="tab-one">Label One</label>
+  <div class="tab-content">
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+
+  </div>
+
+</div>
+
+
+
+ -->

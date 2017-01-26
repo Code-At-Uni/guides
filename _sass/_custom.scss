@@ -33,7 +33,7 @@ footer{
     display: block;
     cursor: pointer;
     font-weight: 700;
-    
+
     a{
       text-align: center;
       color: #fff;
@@ -79,15 +79,14 @@ hr {
 }
 
 blockquote{
-  -webkit-transition: max-height 1s; 
-  -moz-transition: max-height 1s; 
-  -ms-transition: max-height 1s; 
-  -o-transition: max-height 1s; 
-  transition: max-height 1s;  
+  -webkit-transition: max-height 1s;
+  -moz-transition: max-height 1s;
+  -ms-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: max-height 1s;
   max-height: 60px;
   overflow: hidden;
   &:hover {
     max-height: 100%;
   }
 }
-
