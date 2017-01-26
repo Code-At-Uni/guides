@@ -133,41 +133,59 @@ but it doesn’t look pretty at all.</p>
 
 <p>If you don’t understand some of the elements, here is a brief run-down.</p>
 
-<blockquote>
-  <h4 id="element-headings-h1">🔎 Element: Headings <code class="highlighter-rouge">&lt;h1&gt;</code></h4>
+<div class="tab">
+  <input id="tab-heading" type="checkbox" name="tabs" />
 
-  <p>Headings come in 6 sizes</p>
+  <label for="tab-heading">🔎 Element: Headings</label>
+  <div class="tab-content">
 
-  <h1 id="h1headingh1"><code class="highlighter-rouge">&lt;h1&gt;Heading&lt;/h1&gt;</code></h1>
-  <h2 id="h2headingh2"><code class="highlighter-rouge">&lt;h2&gt;Heading&lt;/h2&gt;</code></h2>
-  <h3 id="h3headingh3"><code class="highlighter-rouge">&lt;h3&gt;Heading&lt;/h3&gt;</code></h3>
-  <h4 id="h4headingh4"><code class="highlighter-rouge">&lt;h4&gt;Heading&lt;/h4&gt;</code></h4>
-  <h5 id="h5headingh5"><code class="highlighter-rouge">&lt;h5&gt;Heading&lt;/h5&gt;</code></h5>
-  <h6 id="h6headingh6"><code class="highlighter-rouge">&lt;h6&gt;Heading&lt;/h6&gt;</code></h6>
+    <p>Headings come in 6 sizes</p>
+    <pre>
+      <h1>&#60;h1&gt;Heading 1&#60;/h1&gt;</h1>
+      <h2>&#60;h2&gt;Heading 2&#60;/h2&gt;</h2>
+      <h3>&#60;h3&gt;Heading 3&#60;/h3&gt;</h3>
+      <h4>&#60;h4&gt;Heading 4&#60;/h4&gt;</h4>
+      <h5>&#60;h5&gt;Heading 5&#60;/h5&gt;</h5>
+      <h6>&#60;h6&gt;Heading 6&#60;/h6&gt;</h6>
+    </pre>
 
-  <p>A <code class="highlighter-rouge">h1</code> defines the most important heading whereas a <code class="highlighter-rouge">h6</code> defines the least important.</p>
-</blockquote>
+    <p>A &#60;h1&gt; defines the most important heading whereas a &#60;h6&gt; defines the least important.</p>
 
-<blockquote>
-  <h4 id="element-paragraph-p">🔎 Element: Paragraph <code class="highlighter-rouge">&lt;p&gt;</code></h4>
-
-  <p>Putting content into a <code class="highlighter-rouge">&lt;p&gt;</code> tag will break your text up into paragraphs.
-This helps make the content of your page easier to read for the user.</p>
-
-  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>
-  Lorem ipsum is one of those texts you will see very often on people who just started laying out a web-page.
-<span class="nt">&lt;/p&gt;</span>
-</code></pre>
   </div>
-</blockquote>
+</div>
 
-<blockquote>
-  <h4 id="element-link-a">🔎 Element: Link <code class="highlighter-rouge">&lt;a&gt;</code></h4>
-  <p>A link lets the user click through to another webpage. We use the attribute <code class="highlighter-rouge">href</code> to indicate where you want the user to go.</p>
-  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://en.wikipedia.org/wiki/Web_Design"</span><span class="nt">&gt;</span>More information about Web-Design...<span class="nt">&lt;/a&gt;</span>
-</code></pre>
-  </div>
-</blockquote>
+<div class="tab">
+  <input id="tab-paragraph" type="checkbox" name="tabs" />
+
+  <label for="tab-paragraph">🔎 Element: Paragraph</label>
+  <div class="tab-content">
+
+   <p>Putting content into a &#60;p&gt; tag will break your text up into paragraphs.
+     This helps make the content of your page easier to read for the user.</p>
+     <pre>
+       &#60;p&gt;
+       Lorem ipsum is one of those texts you will see very often on people who just started laying out a web-page.
+       &#60;/p&gt;
+     </pre>
+
+   </div>
+
+ </div>
+
+<div class="tab">
+  <input id="tab-link" type="checkbox" name="tabs" />
+
+  <label for="tab-link">🔎 Element: Link</label>
+  <div class="tab-content">
+
+   <p>A link lets the user click through to another webpage. We use the attribute `href` to indicate where you want the user to go.</p>
+   <pre>
+    &#60;a href="http://en.wikipedia.org/wiki/Web_Design"&gt;More information about Web-Design... &#60;/a&gt;
+  </pre>
+
+</div>
+
+</div>
 
 <hr />
 
@@ -393,24 +411,28 @@ Usually people try to tone it down by using a shade of grey or other possible fa
 
 <p>Here is a brief explanation how the element works.</p>
 
-<blockquote>
-  <h4 id="element-image-img">🔎 Element: Image <code class="highlighter-rouge">&lt;img&gt;</code></h4>
+<div class="tab">
+  <input id="tab-image" type="checkbox" name="tabs" />
 
-  <p>Images are primarily made up of three attributes</p>
+  <label for="tab-image">🔎 Element: Image</label>
+  <div class="tab-content">
+    <p>Images are primarily made up of three attributes</p>
+    <ul>
+      <li>the  &#60;img&gt; tag </li>
+      <li>the `src` attribute, which lets the page know what image we want to view </li>
+      <li>the `alt` attribute, this provides extra information if the image cannot be seen on the webpage for any reason</li>
+    </ul>
+    <pre>
+      <code>
+       &#60;img src="https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d" alt="codeatuni.com"&gt;
+     </code>
+   </pre>
 
-  <ul>
-    <li>the <code class="highlighter-rouge">&lt;img&gt;</code> tag</li>
-    <li>the <code class="highlighter-rouge">src</code> attribute, which lets the page know what image we want to view</li>
-    <li>the <code class="highlighter-rouge">alt</code> attribute, this provides extra information if the image cannot be seen on the webpage for any reason</li>
-  </ul>
+ </div>
 
-</blockquote>
+</div>
 
 <p>In order for us to see this image on the webpage we need to link to the image, this involves telling the webpage where it is and what it is called. Before the main heading of the page, add the following</p>
-
-<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://hd.unsplash.com/photo-1468070454955-c5b6932bd08d"</span> <span class="na">alt=</span><span class="s">"codeatuni.com"</span><span class="nt">&gt;</span>
-</code></pre>
-</div>
 
 <p>Here you can see we have told the <code class="highlighter-rouge">src</code> of the image to look in either a file or a url, then we have given it a relevant <code class="highlighter-rouge">alt</code> attribute.</p>
 
@@ -690,24 +712,6 @@ make some amendments.</p>
 
 <hr />
 
-<!--
-
-TODO: Implement this accordion style, to replace blockquotes
-
-<div class="tab">
-  <input id="tab-one" type="checkbox" name="tabs">
-  <label for="tab-one">Label One</label>
-  <div class="tab-content">
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-
-  </div>
-
-</div>
-
-
-
- -->
 
     </div>
   </article>
